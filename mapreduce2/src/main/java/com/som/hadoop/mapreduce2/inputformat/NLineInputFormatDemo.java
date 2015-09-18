@@ -19,18 +19,18 @@ import com.som.hadoop.mapreduce2.partitioner.TotalOrderParttitonerDemo.TotalOrde
 
 public class NLineInputFormatDemo extends Configured implements Tool {
 
-	public static void main(String[] args) {
-		try {
-			int exitStatus = ToolRunner.run(new NLineInputFormatDemo(), args);
-			System.exit(exitStatus);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+  public static void main(String[] args) {
+    try {
+      int exitStatus = ToolRunner.run(new NLineInputFormatDemo(), args);
+      System.exit(exitStatus);
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
 
-	}
+  }
 
-	@Override
+  @Override
 	public int run(String[] args) throws Exception {
 		
 		if (args.length != 3) {
@@ -76,5 +76,4 @@ public class NLineInputFormatDemo extends Configured implements Tool {
 
 		return exitStatus;
 	}
-
 }
