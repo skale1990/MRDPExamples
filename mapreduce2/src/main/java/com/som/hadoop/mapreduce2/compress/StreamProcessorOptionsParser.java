@@ -9,7 +9,6 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.cli.CommandLine;
@@ -94,7 +93,7 @@ public class StreamProcessorOptionsParser {
     }
   
   /**
-   * Specify properties of each generic option
+   * Specify properties of each option
    */
   @SuppressWarnings("static-access")
   private  void buildGeneralOptions() {
@@ -131,7 +130,7 @@ public class StreamProcessorOptionsParser {
   }
   
   /**
-   * Modify configuration according user-specified generic options
+   * Modify configuration according user-specified options
    * @param conf Configuration to be modified
    * @param line User-specified generic options
    */
@@ -211,7 +210,7 @@ public class StreamProcessorOptionsParser {
   }
   
   /**
-   * Print the usage message for generic command-line options supported.
+   * Print the usage message for command-line options supported.
    * 
    * @param out stream to print the usage message to.
    */
@@ -227,10 +226,8 @@ public class StreamProcessorOptionsParser {
   }
   
   /**
-   * Parse the user-specified options, get the generic options, and modify
+   * Parse the user-specified options, get the options, and modify
    * configuration accordingly
-   * @param opts Options to use for parsing args.
-   * @param conf Configuration to be modified
    * @param args User-specified arguments
    */
   public void parseAndProcessOptions( 
