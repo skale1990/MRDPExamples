@@ -52,7 +52,7 @@ public class NLineInputFormatDemo extends Configured implements Tool {
 		Job job = Job.getInstance(conf, "NLineInputFormatDemo");
 		job.setJarByClass(getClass());
 
-		job.setMapperClass(.class);
+//		job.setMapperClass(.class);
 //		job.setReducerClass(.class);
 	
 
@@ -71,7 +71,7 @@ public class NLineInputFormatDemo extends Configured implements Tool {
 		FileOutputFormat.setOutputPath(job, outputPath);
 		
 		// set lines to be processed within a map
-		NLineInputFormat.
+//		NLineInputFormat.
 		int exitStatus = job.waitForCompletion(true) ? 0 : 1;
 
 		return exitStatus;

@@ -2,6 +2,8 @@ package com.som.hadoop.mapreduce2;
 
 import java.util.regex.Pattern;
 
+import org.apache.hadoop.util.StringUtils;
+
 public class CountOddNumOccurence {
 
   public static void main(String[] args) {
@@ -13,8 +15,8 @@ public class CountOddNumOccurence {
     }
     System.out.println(number + " occured odd number of times");
 
-    Pattern pattern = Pattern.compile("^-?[0-9]{1,5}+(\\.[0-9]{1,0})?$");
-
+    System.out.println(Long.toBinaryString(-128));
+    
   }
 
 }
